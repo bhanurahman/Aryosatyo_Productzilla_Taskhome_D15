@@ -1,0 +1,32 @@
+const arr = [
+    {nama: 'biskuit', harga: 50},
+    {nama: 'minuman', harga: 1000},
+    {nama: 'ciki', harga: 250}
+];
+//nambah data dari belakang
+arr.push({
+    nama: 'sprite',
+    harga: 2500
+});
+// nambah data dari depan
+arr.unshift({
+    nama: 'fanta',
+    harga: 3000
+});
+//nambah data dari tengah 
+arr.splice(2, 0, {
+    nama: 'coca',
+    harga: 5000,
+})
+
+console.log(arr); // array utuh
+
+arr.pop(); //hapus dari belakang
+arr.shift(); //hapus dari depan
+console.log(arr); 
+
+arr.splice(2, 1) // hapus dari tengah berdasrkan index
+console.log(arr);
+
+const arr2 = arr.slice(0 , 2) // menyalin array berdasakan index dari sekian sampe sekian
+console.log(arr2);
