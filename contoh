@@ -2567,7 +2567,6 @@ const storeLocations = data.map(function (d){
         storeLocation: d.storeLocation,
         customerEmail: d.customer.email + '.com',
         customerUsername: `${mrOrMiss} ${username}`
-
     }
     
 });
@@ -2576,4 +2575,3 @@ const storeLocatedAtDenver = storeLocations.filter(function(d){
     return d.storeLocation == 'Denver' 
 });
 console.log(storeLocatedAtDenver);
-

@@ -2570,10 +2570,10 @@ const pembeli = data.map((d) => {
         storeLocation: d.storeLocation,
         email: d.customer.email,
         purchaseMethod: d.purchaseMethod,
-        item:items[0],
+        item:items,
     }
 })
-// console.log(pembeli); // sebelum difilter berdasarkan tempat
+console.log(pembeli); // sebelum difilter berdasarkan tempat
 console.log('===================================================');
 
 const storeAtDenver = pembeli.filter((d) => {
